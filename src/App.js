@@ -1,16 +1,20 @@
 import "./App.css";
 import Dictionary from "./Dictionary.js";
+import cloud from "./media/clouds.jpg";
 
 export default function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{ backgroundImage: `url(${cloud})`, backgroundSize: `cover` }}
+    >
       <div className="container">
         <main>
           <p>You keep using that word</p>
           <h1>I do not think it means what you think it means</h1>
           <p>Dictionary app</p>
           <br />
-          <Dictionary />
+          <Dictionary keyword="princess" />
         </main>
         <footer className="text-center">
           <small>

@@ -1,7 +1,7 @@
-.Meaning {
+.Meaning h3 {
   text-align: left;
 }
 
-.Meaning h3 {
-  text-align: left;
+.Meaning ul {
+  list-style: none;
 }
