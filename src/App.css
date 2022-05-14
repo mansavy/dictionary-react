@@ -1,3 +1,8 @@
+.App {
+  height: 100%;
+  margin: 0;
+}
+
 h1 {
   margin: 0;
   font-family: "Gentium Book Basic", serif;
@@ -9,6 +14,15 @@ p {
   text-align: center;
 }
 
+a {
+  color: #dfc55a;
+}
+
+a:hover {
+  color: white;
+}
+
 footer {
   padding: 30px;
+  color: #dfc55a;
 }

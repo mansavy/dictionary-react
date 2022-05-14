@@ -9,12 +9,12 @@ export default function Phonetic(props) {
 
   if (props.phonetic.audio) {
     return (
-      <div className="Phonetic">
-        {props.phonetic.text} <br />
+      <div className="Phonetic ms-2">
+        {props.phonetic.text}
         <audio id="audio">
           <source src={props.phonetic.audio} type="audio/mp3" />
         </audio>
-        <button onClick={sound} className="btn btn-primary"></button>
+        <i onClick={sound} class="fa-solid fa-play  ms-3 mb-2"></i>
       </div>
     );
   } else {

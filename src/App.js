@@ -10,7 +10,7 @@ export default function App() {
     >
       <div className="container">
         <main>
-          <p>You keep using that word</p>
+          <p className="pt-5">You keep using that word</p>
           <h1>I do not think it means what you think it means</h1>
           <p>Dictionary app</p>
           <br />
@@ -33,6 +33,7 @@ export default function App() {
             >
               Mandy Savoie
             </a>
+            <br />
           </small>
         </footer>
       </div>
