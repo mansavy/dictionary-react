@@ -1,0 +1,8 @@
+.Photos {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.Photos img {
+  margin: 20px 0;
+  padding: 30px;
+}

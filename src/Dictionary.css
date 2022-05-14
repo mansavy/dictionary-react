@@ -1,3 +1,14 @@
 form {
   text-align: center;
 }
+
+.button {
+  background-color: #dfc55a;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .button {
+    margin-top: 3px;
+  }
+}

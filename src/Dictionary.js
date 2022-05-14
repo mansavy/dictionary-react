@@ -28,7 +28,7 @@ export default function Dictionary(props) {
     axios.get(url).then(handleResponse);
 
     let pexelKey = "563492ad6f91700001000001f97cf4207d884752bbff12b52f2e4de5";
-    let pexelUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    let pexelUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
     let headers = { Authorization: `Bearer ${pexelKey}` };
 
     axios.get(pexelUrl, { headers: headers }).then(handlePexelResponse);
@@ -50,7 +50,11 @@ export default function Dictionary(props) {
             onChange={handleKeywordChange}
             defaultValue={props.keyword}
           />
-          <input type="submit" className="btn btn-primary ms-3" />
+          <input
+            type="submit"
+            className="btn button ms-3"
+            value="As you wish"
+          />
         </form>
         <Results results={results} />
         <Photos photos={photos} />
